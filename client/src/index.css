@@ -7,6 +7,16 @@
   src: url('./fonts/COOPBL.TTF');
 }
 
+@font-face {
+  font-family: 'helvetica';
+  src: url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("woff");
+}
+
+@font-face {
+  font-family: 'playfair';
+  src: url('https://img1.wsimg.com/gfonts/s/playfairdisplay/v37/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgEM86xRbPQ.woff2') format('woff2');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -19,4 +29,33 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.donut-font{
+  font-family: Georgia, serif;
+}
+
+#canvas div::-webkit-scrollbar {
+  display: none;
+}
+
+#canvas div {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.spin-donut {
+  animation: spin 2s linear infinite;
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
